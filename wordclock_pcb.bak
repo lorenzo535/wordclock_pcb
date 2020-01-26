@@ -1,0 +1,1668 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5E2C90BE
+P 1250 1400
+F 0 "D1" V 1288 1283 50  0000 R CNN
+F 1 "LED" V 1197 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 1400 50  0001 C CNN
+F 3 "~" H 1250 1400 50  0001 C CNN
+	1    1250 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E2C9744
+P 1600 1400
+F 0 "D2" V 1638 1283 50  0000 R CNN
+F 1 "LED" V 1547 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 1400 50  0001 C CNN
+F 3 "~" H 1600 1400 50  0001 C CNN
+	1    1600 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MAX7219:MAX7219 U1
+U 1 1 5E2CCBE1
+P 6850 2600
+F 0 "U1" H 6850 3426 50  0000 C CNN
+F 1 "MAX7219" H 6850 2600 50  0001 L BNN
+F 2 "max7219:DIL24" H 6850 2600 50  0001 C CNN
+F 3 "" H 6850 2600 50  0001 C CNN
+	1    6850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5E2CD014
+P 8600 950
+F 0 "J1" H 8680 942 50  0000 L CNN
+F 1 "Conn_01x06" H 8680 851 50  0000 L CNN
+F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_6pol" H 8600 950 50  0001 C CNN
+F 3 "~" H 8600 950 50  0001 C CNN
+	1    8600 950 
+	1    0    0    -1  
+$EndComp
+Text Label 6100 1950 0    50   ~ 0
+DIN
+Text Label 8150 750  0    50   ~ 0
+DIN
+Text Label 7650 1950 0    50   ~ 0
+DOUT
+Text Label 7650 3150 0    50   ~ 0
+CS
+Text Label 7650 3250 0    50   ~ 0
+CLK
+$Comp
+L power:Earth #PWR03
+U 1 1 5E2CD45A
+P 6100 3300
+F 0 "#PWR03" H 6100 3050 50  0001 C CNN
+F 1 "Earth" H 6100 3150 50  0001 C CNN
+F 2 "" H 6100 3300 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3150 6300 3250
+Wire Wire Line
+	6300 3250 6100 3250
+Wire Wire Line
+	6100 3250 6100 3300
+Connection ~ 6300 3250
+$Comp
+L power:VDD #PWR01
+U 1 1 5E2CD576
+P 5450 3000
+F 0 "#PWR01" H 5450 2850 50  0001 C CNN
+F 1 "VDD" H 5467 3173 50  0000 C CNN
+F 2 "" H 5450 3000 50  0001 C CNN
+F 3 "" H 5450 3000 50  0001 C CNN
+	1    5450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1950 7400 1950
+Wire Wire Line
+	6300 1950 6100 1950
+Wire Wire Line
+	7400 3150 7650 3150
+Wire Wire Line
+	7650 3250 7400 3250
+Text Label 7950 850  0    50   ~ 0
+DOUT
+Text Label 7950 950  0    50   ~ 0
+CS
+Text Label 8050 1050 0    50   ~ 0
+CLK
+$Comp
+L power:VDD #PWR04
+U 1 1 5E2CDA18
+P 7850 1200
+F 0 "#PWR04" H 7850 1050 50  0001 C CNN
+F 1 "VDD" H 7867 1373 50  0000 C CNN
+F 2 "" H 7850 1200 50  0001 C CNN
+F 3 "" H 7850 1200 50  0001 C CNN
+	1    7850 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 750  8150 750 
+$Comp
+L power:Earth #PWR05
+U 1 1 5E2CDE0D
+P 8250 1250
+F 0 "#PWR05" H 8250 1000 50  0001 C CNN
+F 1 "Earth" H 8250 1100 50  0001 C CNN
+F 2 "" H 8250 1250 50  0001 C CNN
+F 3 "~" H 8250 1250 50  0001 C CNN
+	1    8250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1250 8250 1250
+Wire Wire Line
+	8400 1150 7850 1150
+Wire Wire Line
+	7850 1150 7850 1200
+Wire Wire Line
+	8400 1050 8050 1050
+Wire Wire Line
+	8400 950  7950 950 
+Wire Wire Line
+	8400 850  7950 850 
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5E2CE91F
+P 10350 900
+F 0 "J2" H 10430 892 50  0000 L CNN
+F 1 "Conn_01x06" H 10430 801 50  0000 L CNN
+F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_6pol" H 10350 900 50  0001 C CNN
+F 3 "~" H 10350 900 50  0001 C CNN
+	1    10350 900 
+	1    0    0    -1  
+$EndComp
+Text Label 9900 700  0    50   ~ 0
+DIN
+Text Label 9700 800  0    50   ~ 0
+DOUT
+Text Label 9700 900  0    50   ~ 0
+CS
+Text Label 9800 1000 0    50   ~ 0
+CLK
+$Comp
+L power:VDD #PWR07
+U 1 1 5E2CE92A
+P 9600 1150
+F 0 "#PWR07" H 9600 1000 50  0001 C CNN
+F 1 "VDD" H 9617 1323 50  0000 C CNN
+F 2 "" H 9600 1150 50  0001 C CNN
+F 3 "" H 9600 1150 50  0001 C CNN
+	1    9600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 700  9900 700 
+$Comp
+L power:Earth #PWR08
+U 1 1 5E2CE931
+P 10000 1200
+F 0 "#PWR08" H 10000 950 50  0001 C CNN
+F 1 "Earth" H 10000 1050 50  0001 C CNN
+F 2 "" H 10000 1200 50  0001 C CNN
+F 3 "~" H 10000 1200 50  0001 C CNN
+	1    10000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1200 10000 1200
+Wire Wire Line
+	10150 1100 9600 1100
+Wire Wire Line
+	9600 1100 9600 1150
+Wire Wire Line
+	10150 1000 9800 1000
+Wire Wire Line
+	10150 900  9700 900 
+Wire Wire Line
+	10150 800  9700 800 
+$Comp
+L Device:R R1
+U 1 1 5E2CF235
+P 8100 2900
+F 0 "R1" H 8170 2946 50  0000 L CNN
+F 1 "R" H 8170 2855 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 8030 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3050 8100 3050
+$Comp
+L power:VDD #PWR06
+U 1 1 5E2CF57B
+P 8350 2750
+F 0 "#PWR06" H 8350 2600 50  0001 C CNN
+F 1 "VDD" H 8367 2923 50  0000 C CNN
+F 2 "" H 8350 2750 50  0001 C CNN
+F 3 "" H 8350 2750 50  0001 C CNN
+	1    8350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2750 8100 2750
+$Comp
+L Device:CP C2
+U 1 1 5E2CFA85
+P 5650 3150
+F 0 "C2" H 5768 3196 50  0000 L CNN
+F 1 "CP" H 5768 3105 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 5688 3000 50  0001 C CNN
+F 3 "~" H 5650 3150 50  0001 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E2CFB55
+P 5250 3150
+F 0 "C1" H 5342 3196 50  0000 L CNN
+F 1 "C_Small" H 5342 3105 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 5250 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3050 5450 3050
+Wire Wire Line
+	5450 3050 5450 3000
+Wire Wire Line
+	5650 3000 5450 3000
+Connection ~ 5450 3000
+Wire Wire Line
+	5250 3250 5250 3350
+Wire Wire Line
+	5650 3350 5650 3300
+Wire Wire Line
+	5250 3350 5450 3350
+$Comp
+L power:Earth #PWR02
+U 1 1 5E2D0A10
+P 5450 3350
+F 0 "#PWR02" H 5450 3100 50  0001 C CNN
+F 1 "Earth" H 5450 3200 50  0001 C CNN
+F 2 "" H 5450 3350 50  0001 C CNN
+F 3 "~" H 5450 3350 50  0001 C CNN
+	1    5450 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 3350
+Wire Wire Line
+	5450 3350 5650 3350
+Wire Wire Line
+	5650 3050 5650 3000
+Wire Wire Line
+	5650 3050 6300 3050
+Connection ~ 5650 3000
+$Comp
+L Device:LED D3
+U 1 1 5E2D3D77
+P 1950 1400
+F 0 "D3" V 1988 1283 50  0000 R CNN
+F 1 "LED" V 1897 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 1400 50  0001 C CNN
+F 3 "~" H 1950 1400 50  0001 C CNN
+	1    1950 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5E2D3D7E
+P 2300 1400
+F 0 "D4" V 2338 1283 50  0000 R CNN
+F 1 "LED" V 2247 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 1400 50  0001 C CNN
+F 3 "~" H 2300 1400 50  0001 C CNN
+	1    2300 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5E2D46A0
+P 2650 1400
+F 0 "D5" V 2688 1283 50  0000 R CNN
+F 1 "LED" V 2597 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 1400 50  0001 C CNN
+F 3 "~" H 2650 1400 50  0001 C CNN
+	1    2650 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5E2D46A7
+P 3000 1400
+F 0 "D6" V 3038 1283 50  0000 R CNN
+F 1 "LED" V 2947 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 1400 50  0001 C CNN
+F 3 "~" H 3000 1400 50  0001 C CNN
+	1    3000 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5E2D46AE
+P 3350 1400
+F 0 "D7" V 3388 1283 50  0000 R CNN
+F 1 "LED" V 3297 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 1400 50  0001 C CNN
+F 3 "~" H 3350 1400 50  0001 C CNN
+	1    3350 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5E2D46B5
+P 3700 1400
+F 0 "D8" V 3738 1283 50  0000 R CNN
+F 1 "LED" V 3647 1283 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 1400 50  0001 C CNN
+F 3 "~" H 3700 1400 50  0001 C CNN
+	1    3700 1400
+	0    -1   -1   0   
+$EndComp
+Text Label 5900 2150 0    50   ~ 0
+LED0
+Text Label 5900 2250 0    50   ~ 0
+LED1
+Text Label 5900 2350 0    50   ~ 0
+LED2
+Text Label 5900 2450 0    50   ~ 0
+LED3
+Text Label 5900 2550 0    50   ~ 0
+LED4
+Text Label 5900 2650 0    50   ~ 0
+LED5
+Text Label 5900 2750 0    50   ~ 0
+LED6
+Text Label 7700 2150 0    50   ~ 0
+LEDDP
+Text Label 7700 2250 0    50   ~ 0
+LEDA
+Text Label 7700 2350 0    50   ~ 0
+LEDB
+Text Label 7700 2450 0    50   ~ 0
+LEDC
+Text Label 7700 2550 0    50   ~ 0
+LEDD
+Text Label 7700 2650 0    50   ~ 0
+LEDE
+Text Label 7700 2750 0    50   ~ 0
+LEDF
+Text Label 7700 2850 0    50   ~ 0
+LEDG
+Text Label 5900 2850 0    50   ~ 0
+LED7
+Wire Wire Line
+	6300 2150 5900 2150
+Wire Wire Line
+	5900 2250 6300 2250
+Wire Wire Line
+	6300 2350 5900 2350
+Wire Wire Line
+	5900 2450 6300 2450
+Wire Wire Line
+	6300 2550 5900 2550
+Wire Wire Line
+	5900 2650 6300 2650
+Wire Wire Line
+	6300 2750 5900 2750
+Wire Wire Line
+	5900 2850 6300 2850
+Wire Wire Line
+	7400 2150 7700 2150
+Wire Wire Line
+	7700 2250 7400 2250
+Wire Wire Line
+	7400 2350 7700 2350
+Wire Wire Line
+	7700 2450 7400 2450
+Wire Wire Line
+	7400 2550 7700 2550
+Wire Wire Line
+	7700 2650 7400 2650
+Wire Wire Line
+	7400 2750 7700 2750
+Wire Wire Line
+	7700 2850 7400 2850
+$Comp
+L Device:LED D9
+U 1 1 5E2E0539
+P 1250 2000
+F 0 "D9" V 1288 1883 50  0000 R CNN
+F 1 "LED" V 1197 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 2000 50  0001 C CNN
+F 3 "~" H 1250 2000 50  0001 C CNN
+	1    1250 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 5E2E0540
+P 1600 2000
+F 0 "D10" V 1638 1883 50  0000 R CNN
+F 1 "LED" V 1547 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 2000 50  0001 C CNN
+F 3 "~" H 1600 2000 50  0001 C CNN
+	1    1600 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5E2E0547
+P 1950 2000
+F 0 "D11" V 1988 1883 50  0000 R CNN
+F 1 "LED" V 1897 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 2000 50  0001 C CNN
+F 3 "~" H 1950 2000 50  0001 C CNN
+	1    1950 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 5E2E054E
+P 2300 2000
+F 0 "D12" V 2338 1883 50  0000 R CNN
+F 1 "LED" V 2247 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 2000 50  0001 C CNN
+F 3 "~" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 5E2E0555
+P 2650 2000
+F 0 "D13" V 2688 1883 50  0000 R CNN
+F 1 "LED" V 2597 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 2000 50  0001 C CNN
+F 3 "~" H 2650 2000 50  0001 C CNN
+	1    2650 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 5E2E055C
+P 3000 2000
+F 0 "D14" V 3038 1883 50  0000 R CNN
+F 1 "LED" V 2947 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 2000 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D15
+U 1 1 5E2E0563
+P 3350 2000
+F 0 "D15" V 3388 1883 50  0000 R CNN
+F 1 "LED" V 3297 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 2000 50  0001 C CNN
+F 3 "~" H 3350 2000 50  0001 C CNN
+	1    3350 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D16
+U 1 1 5E2E056A
+P 3700 2000
+F 0 "D16" V 3738 1883 50  0000 R CNN
+F 1 "LED" V 3647 1883 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 2000 50  0001 C CNN
+F 3 "~" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D17
+U 1 1 5E2E1A9A
+P 1250 2600
+F 0 "D17" V 1288 2483 50  0000 R CNN
+F 1 "LED" V 1197 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 2600 50  0001 C CNN
+F 3 "~" H 1250 2600 50  0001 C CNN
+	1    1250 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D18
+U 1 1 5E2E1AA1
+P 1600 2600
+F 0 "D18" V 1638 2483 50  0000 R CNN
+F 1 "LED" V 1547 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 2600 50  0001 C CNN
+F 3 "~" H 1600 2600 50  0001 C CNN
+	1    1600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D19
+U 1 1 5E2E1AA8
+P 1950 2600
+F 0 "D19" V 1988 2483 50  0000 R CNN
+F 1 "LED" V 1897 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 2600 50  0001 C CNN
+F 3 "~" H 1950 2600 50  0001 C CNN
+	1    1950 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D20
+U 1 1 5E2E1AAF
+P 2300 2600
+F 0 "D20" V 2338 2483 50  0000 R CNN
+F 1 "LED" V 2247 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 2600 50  0001 C CNN
+F 3 "~" H 2300 2600 50  0001 C CNN
+	1    2300 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D21
+U 1 1 5E2E1AB6
+P 2650 2600
+F 0 "D21" V 2688 2483 50  0000 R CNN
+F 1 "LED" V 2597 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 2600 50  0001 C CNN
+F 3 "~" H 2650 2600 50  0001 C CNN
+	1    2650 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D22
+U 1 1 5E2E1ABD
+P 3000 2600
+F 0 "D22" V 3038 2483 50  0000 R CNN
+F 1 "LED" V 2947 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 2600 50  0001 C CNN
+F 3 "~" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D23
+U 1 1 5E2E1AC4
+P 3350 2600
+F 0 "D23" V 3388 2483 50  0000 R CNN
+F 1 "LED" V 3297 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 2600 50  0001 C CNN
+F 3 "~" H 3350 2600 50  0001 C CNN
+	1    3350 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D24
+U 1 1 5E2E1ACB
+P 3700 2600
+F 0 "D24" V 3738 2483 50  0000 R CNN
+F 1 "LED" V 3647 2483 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 2600 50  0001 C CNN
+F 3 "~" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D25
+U 1 1 5E2E1AD2
+P 1250 3200
+F 0 "D25" V 1288 3083 50  0000 R CNN
+F 1 "LED" V 1197 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 3200 50  0001 C CNN
+F 3 "~" H 1250 3200 50  0001 C CNN
+	1    1250 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D26
+U 1 1 5E2E1AD9
+P 1600 3200
+F 0 "D26" V 1638 3083 50  0000 R CNN
+F 1 "LED" V 1547 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 3200 50  0001 C CNN
+F 3 "~" H 1600 3200 50  0001 C CNN
+	1    1600 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D27
+U 1 1 5E2E1AE0
+P 1950 3200
+F 0 "D27" V 1988 3083 50  0000 R CNN
+F 1 "LED" V 1897 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 3200 50  0001 C CNN
+F 3 "~" H 1950 3200 50  0001 C CNN
+	1    1950 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D28
+U 1 1 5E2E1AE7
+P 2300 3200
+F 0 "D28" V 2338 3083 50  0000 R CNN
+F 1 "LED" V 2247 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 3200 50  0001 C CNN
+F 3 "~" H 2300 3200 50  0001 C CNN
+	1    2300 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D29
+U 1 1 5E2E1AEE
+P 2650 3200
+F 0 "D29" V 2688 3083 50  0000 R CNN
+F 1 "LED" V 2597 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 3200 50  0001 C CNN
+F 3 "~" H 2650 3200 50  0001 C CNN
+	1    2650 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D30
+U 1 1 5E2E1AF5
+P 3000 3200
+F 0 "D30" V 3038 3083 50  0000 R CNN
+F 1 "LED" V 2947 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 3200 50  0001 C CNN
+F 3 "~" H 3000 3200 50  0001 C CNN
+	1    3000 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D31
+U 1 1 5E2E1AFC
+P 3350 3200
+F 0 "D31" V 3388 3083 50  0000 R CNN
+F 1 "LED" V 3297 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 3200 50  0001 C CNN
+F 3 "~" H 3350 3200 50  0001 C CNN
+	1    3350 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D32
+U 1 1 5E2E1B03
+P 3700 3200
+F 0 "D32" V 3738 3083 50  0000 R CNN
+F 1 "LED" V 3647 3083 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 3200 50  0001 C CNN
+F 3 "~" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D33
+U 1 1 5E2E328D
+P 1250 3750
+F 0 "D33" V 1288 3633 50  0000 R CNN
+F 1 "LED" V 1197 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 3750 50  0001 C CNN
+F 3 "~" H 1250 3750 50  0001 C CNN
+	1    1250 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D34
+U 1 1 5E2E3294
+P 1600 3750
+F 0 "D34" V 1638 3633 50  0000 R CNN
+F 1 "LED" V 1547 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 3750 50  0001 C CNN
+F 3 "~" H 1600 3750 50  0001 C CNN
+	1    1600 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D35
+U 1 1 5E2E329B
+P 1950 3750
+F 0 "D35" V 1988 3633 50  0000 R CNN
+F 1 "LED" V 1897 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 3750 50  0001 C CNN
+F 3 "~" H 1950 3750 50  0001 C CNN
+	1    1950 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D36
+U 1 1 5E2E32A2
+P 2300 3750
+F 0 "D36" V 2338 3633 50  0000 R CNN
+F 1 "LED" V 2247 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 3750 50  0001 C CNN
+F 3 "~" H 2300 3750 50  0001 C CNN
+	1    2300 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D37
+U 1 1 5E2E32A9
+P 2650 3750
+F 0 "D37" V 2688 3633 50  0000 R CNN
+F 1 "LED" V 2597 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 3750 50  0001 C CNN
+F 3 "~" H 2650 3750 50  0001 C CNN
+	1    2650 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D38
+U 1 1 5E2E32B0
+P 3000 3750
+F 0 "D38" V 3038 3633 50  0000 R CNN
+F 1 "LED" V 2947 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 3750 50  0001 C CNN
+F 3 "~" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D39
+U 1 1 5E2E32B7
+P 3350 3750
+F 0 "D39" V 3388 3633 50  0000 R CNN
+F 1 "LED" V 3297 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 3750 50  0001 C CNN
+F 3 "~" H 3350 3750 50  0001 C CNN
+	1    3350 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D40
+U 1 1 5E2E32BE
+P 3700 3750
+F 0 "D40" V 3738 3633 50  0000 R CNN
+F 1 "LED" V 3647 3633 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 3750 50  0001 C CNN
+F 3 "~" H 3700 3750 50  0001 C CNN
+	1    3700 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D41
+U 1 1 5E2E32C5
+P 1250 4350
+F 0 "D41" V 1288 4233 50  0000 R CNN
+F 1 "LED" V 1197 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 4350 50  0001 C CNN
+F 3 "~" H 1250 4350 50  0001 C CNN
+	1    1250 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D42
+U 1 1 5E2E32CC
+P 1600 4350
+F 0 "D42" V 1638 4233 50  0000 R CNN
+F 1 "LED" V 1547 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 4350 50  0001 C CNN
+F 3 "~" H 1600 4350 50  0001 C CNN
+	1    1600 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D43
+U 1 1 5E2E32D3
+P 1950 4350
+F 0 "D43" V 1988 4233 50  0000 R CNN
+F 1 "LED" V 1897 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 4350 50  0001 C CNN
+F 3 "~" H 1950 4350 50  0001 C CNN
+	1    1950 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D44
+U 1 1 5E2E32DA
+P 2300 4350
+F 0 "D44" V 2338 4233 50  0000 R CNN
+F 1 "LED" V 2247 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 4350 50  0001 C CNN
+F 3 "~" H 2300 4350 50  0001 C CNN
+	1    2300 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D45
+U 1 1 5E2E32E1
+P 2650 4350
+F 0 "D45" V 2688 4233 50  0000 R CNN
+F 1 "LED" V 2597 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D46
+U 1 1 5E2E32E8
+P 3000 4350
+F 0 "D46" V 3038 4233 50  0000 R CNN
+F 1 "LED" V 2947 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 4350 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D47
+U 1 1 5E2E32EF
+P 3350 4350
+F 0 "D47" V 3388 4233 50  0000 R CNN
+F 1 "LED" V 3297 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 4350 50  0001 C CNN
+F 3 "~" H 3350 4350 50  0001 C CNN
+	1    3350 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D48
+U 1 1 5E2E32F6
+P 3700 4350
+F 0 "D48" V 3738 4233 50  0000 R CNN
+F 1 "LED" V 3647 4233 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 4350 50  0001 C CNN
+F 3 "~" H 3700 4350 50  0001 C CNN
+	1    3700 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D49
+U 1 1 5E2E4A12
+P 1250 4900
+F 0 "D49" V 1288 4783 50  0000 R CNN
+F 1 "LED" V 1197 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 4900 50  0001 C CNN
+F 3 "~" H 1250 4900 50  0001 C CNN
+	1    1250 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D50
+U 1 1 5E2E4A19
+P 1600 4900
+F 0 "D50" V 1638 4783 50  0000 R CNN
+F 1 "LED" V 1547 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 4900 50  0001 C CNN
+F 3 "~" H 1600 4900 50  0001 C CNN
+	1    1600 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D51
+U 1 1 5E2E4A20
+P 1950 4900
+F 0 "D51" V 1988 4783 50  0000 R CNN
+F 1 "LED" V 1897 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 4900 50  0001 C CNN
+F 3 "~" H 1950 4900 50  0001 C CNN
+	1    1950 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D52
+U 1 1 5E2E4A27
+P 2300 4900
+F 0 "D52" V 2338 4783 50  0000 R CNN
+F 1 "LED" V 2247 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 4900 50  0001 C CNN
+F 3 "~" H 2300 4900 50  0001 C CNN
+	1    2300 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D53
+U 1 1 5E2E4A2E
+P 2650 4900
+F 0 "D53" V 2688 4783 50  0000 R CNN
+F 1 "LED" V 2597 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 4900 50  0001 C CNN
+F 3 "~" H 2650 4900 50  0001 C CNN
+	1    2650 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D54
+U 1 1 5E2E4A35
+P 3000 4900
+F 0 "D54" V 3038 4783 50  0000 R CNN
+F 1 "LED" V 2947 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 4900 50  0001 C CNN
+F 3 "~" H 3000 4900 50  0001 C CNN
+	1    3000 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D55
+U 1 1 5E2E4A3C
+P 3350 4900
+F 0 "D55" V 3388 4783 50  0000 R CNN
+F 1 "LED" V 3297 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 4900 50  0001 C CNN
+F 3 "~" H 3350 4900 50  0001 C CNN
+	1    3350 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D56
+U 1 1 5E2E4A43
+P 3700 4900
+F 0 "D56" V 3738 4783 50  0000 R CNN
+F 1 "LED" V 3647 4783 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 4900 50  0001 C CNN
+F 3 "~" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D57
+U 1 1 5E2E4A4A
+P 1250 5500
+F 0 "D57" V 1288 5383 50  0000 R CNN
+F 1 "LED" V 1197 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1250 5500 50  0001 C CNN
+F 3 "~" H 1250 5500 50  0001 C CNN
+	1    1250 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D58
+U 1 1 5E2E4A51
+P 1600 5500
+F 0 "D58" V 1638 5383 50  0000 R CNN
+F 1 "LED" V 1547 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1600 5500 50  0001 C CNN
+F 3 "~" H 1600 5500 50  0001 C CNN
+	1    1600 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D59
+U 1 1 5E2E4A58
+P 1950 5500
+F 0 "D59" V 1988 5383 50  0000 R CNN
+F 1 "LED" V 1897 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 1950 5500 50  0001 C CNN
+F 3 "~" H 1950 5500 50  0001 C CNN
+	1    1950 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D60
+U 1 1 5E2E4A5F
+P 2300 5500
+F 0 "D60" V 2338 5383 50  0000 R CNN
+F 1 "LED" V 2247 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2300 5500 50  0001 C CNN
+F 3 "~" H 2300 5500 50  0001 C CNN
+	1    2300 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D61
+U 1 1 5E2E4A66
+P 2650 5500
+F 0 "D61" V 2688 5383 50  0000 R CNN
+F 1 "LED" V 2597 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 2650 5500 50  0001 C CNN
+F 3 "~" H 2650 5500 50  0001 C CNN
+	1    2650 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D62
+U 1 1 5E2E4A6D
+P 3000 5500
+F 0 "D62" V 3038 5383 50  0000 R CNN
+F 1 "LED" V 2947 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3000 5500 50  0001 C CNN
+F 3 "~" H 3000 5500 50  0001 C CNN
+	1    3000 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D63
+U 1 1 5E2E4A74
+P 3350 5500
+F 0 "D63" V 3388 5383 50  0000 R CNN
+F 1 "LED" V 3297 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3350 5500 50  0001 C CNN
+F 3 "~" H 3350 5500 50  0001 C CNN
+	1    3350 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D64
+U 1 1 5E2E4A7B
+P 3700 5500
+F 0 "D64" V 3738 5383 50  0000 R CNN
+F 1 "LED" V 3647 5383 50  0000 R CNN
+F 2 "lorenzo2018:ledthroughhole" H 3700 5500 50  0001 C CNN
+F 3 "~" H 3700 5500 50  0001 C CNN
+	1    3700 5500
+	0    -1   -1   0   
+$EndComp
+Text Label 800  1250 0    50   ~ 0
+LEDA
+Wire Wire Line
+	800  1250 1250 1250
+Wire Wire Line
+	1250 1250 1600 1250
+Wire Wire Line
+	1600 1250 1950 1250
+Connection ~ 1250 1250
+Connection ~ 1600 1250
+Wire Wire Line
+	1950 1250 2300 1250
+Connection ~ 1950 1250
+Wire Wire Line
+	2650 1250 2300 1250
+Connection ~ 2300 1250
+Wire Wire Line
+	2650 1250 3000 1250
+Wire Wire Line
+	3000 1250 3350 1250
+Connection ~ 2650 1250
+Connection ~ 3000 1250
+Wire Wire Line
+	3700 1250 3350 1250
+Connection ~ 3350 1250
+Wire Wire Line
+	3700 1850 3350 1850
+Wire Wire Line
+	3000 1850 2650 1850
+Wire Wire Line
+	2300 1850 1950 1850
+Wire Wire Line
+	1600 1850 1250 1850
+Wire Wire Line
+	1600 1850 1950 1850
+Connection ~ 1600 1850
+Connection ~ 1950 1850
+Wire Wire Line
+	2300 1850 2650 1850
+Connection ~ 2300 1850
+Connection ~ 2650 1850
+Wire Wire Line
+	3000 1850 3350 1850
+Connection ~ 3000 1850
+Connection ~ 3350 1850
+Wire Wire Line
+	3700 2450 3350 2450
+Wire Wire Line
+	3000 2450 2650 2450
+Wire Wire Line
+	1600 2450 1250 2450
+Wire Wire Line
+	1600 2450 1950 2450
+Connection ~ 1600 2450
+Wire Wire Line
+	2300 2450 2650 2450
+Connection ~ 2650 2450
+Wire Wire Line
+	2300 2450 1950 2450
+Connection ~ 2300 2450
+Connection ~ 1950 2450
+Wire Wire Line
+	3350 2450 3000 2450
+Connection ~ 3350 2450
+Connection ~ 3000 2450
+Wire Wire Line
+	3700 3050 3350 3050
+Wire Wire Line
+	3350 3050 3000 3050
+Connection ~ 3350 3050
+Wire Wire Line
+	2650 3050 3000 3050
+Connection ~ 3000 3050
+Wire Wire Line
+	2300 3050 2650 3050
+Connection ~ 2650 3050
+Wire Wire Line
+	1950 3050 2300 3050
+Connection ~ 2300 3050
+Wire Wire Line
+	1600 3050 1950 3050
+Connection ~ 1950 3050
+Wire Wire Line
+	1250 3050 1600 3050
+Connection ~ 1600 3050
+Wire Wire Line
+	1250 3600 1600 3600
+Wire Wire Line
+	1950 3600 1600 3600
+Connection ~ 1600 3600
+Wire Wire Line
+	2300 3600 1950 3600
+Connection ~ 1950 3600
+Wire Wire Line
+	2650 3600 2300 3600
+Connection ~ 2300 3600
+Wire Wire Line
+	3000 3600 2650 3600
+Connection ~ 2650 3600
+Wire Wire Line
+	3350 3600 3000 3600
+Connection ~ 3000 3600
+Wire Wire Line
+	3700 3600 3350 3600
+Connection ~ 3350 3600
+Wire Wire Line
+	3700 4200 3350 4200
+Wire Wire Line
+	3000 4200 3350 4200
+Connection ~ 3350 4200
+Wire Wire Line
+	2650 4200 3000 4200
+Connection ~ 3000 4200
+Wire Wire Line
+	2650 4200 2300 4200
+Connection ~ 2650 4200
+Wire Wire Line
+	2300 4200 1950 4200
+Connection ~ 2300 4200
+Wire Wire Line
+	1950 4200 1600 4200
+Connection ~ 1950 4200
+Wire Wire Line
+	1600 4200 1250 4200
+Connection ~ 1600 4200
+Wire Wire Line
+	1250 4750 1600 4750
+Wire Wire Line
+	1950 4750 1600 4750
+Connection ~ 1600 4750
+Wire Wire Line
+	2300 4750 2650 4750
+Wire Wire Line
+	2650 4750 3000 4750
+Connection ~ 2650 4750
+Wire Wire Line
+	3350 4750 3000 4750
+Connection ~ 3000 4750
+Wire Wire Line
+	3700 4750 3350 4750
+Connection ~ 3350 4750
+Wire Wire Line
+	2300 4750 1950 4750
+Connection ~ 2300 4750
+Connection ~ 1950 4750
+Text Label 850  1850 0    50   ~ 0
+LEDB
+Text Label 850  2450 0    50   ~ 0
+LEDC
+Text Label 900  3050 0    50   ~ 0
+LEDD
+Text Label 850  3600 0    50   ~ 0
+LEDE
+Text Label 850  4200 0    50   ~ 0
+LEDF
+Text Label 850  4750 0    50   ~ 0
+LEDG
+Text Label 850  5350 0    50   ~ 0
+LEDDP
+Wire Wire Line
+	850  5400 850  5350
+Wire Wire Line
+	1250 5350 850  5350
+Wire Wire Line
+	1250 5350 1600 5350
+Connection ~ 1250 5350
+Wire Wire Line
+	1600 5350 1950 5350
+Connection ~ 1600 5350
+Wire Wire Line
+	1950 5350 2300 5350
+Connection ~ 1950 5350
+Wire Wire Line
+	2300 5350 2650 5350
+Connection ~ 2300 5350
+Wire Wire Line
+	2650 5350 3000 5350
+Connection ~ 2650 5350
+Wire Wire Line
+	3350 5350 3000 5350
+Connection ~ 3000 5350
+Wire Wire Line
+	3700 5350 3350 5350
+Connection ~ 3350 5350
+Wire Wire Line
+	1250 4750 850  4750
+Connection ~ 1250 4750
+Wire Wire Line
+	1250 4200 850  4200
+Connection ~ 1250 4200
+Wire Wire Line
+	1250 3600 850  3600
+Connection ~ 1250 3600
+Wire Wire Line
+	1250 3050 900  3050
+Connection ~ 1250 3050
+Wire Wire Line
+	1250 2450 850  2450
+Connection ~ 1250 2450
+Wire Wire Line
+	1250 1850 850  1850
+Connection ~ 1250 1850
+Wire Wire Line
+	1400 1600 1400 2250
+Wire Wire Line
+	1400 5750 1250 5750
+Wire Wire Line
+	1250 5750 1250 5650
+Connection ~ 1400 5750
+Wire Wire Line
+	1400 5750 1400 6050
+Wire Wire Line
+	1250 5050 1250 5150
+Wire Wire Line
+	1250 5150 1400 5150
+Connection ~ 1400 5150
+Wire Wire Line
+	1400 5150 1400 5750
+Wire Wire Line
+	1250 4500 1250 4600
+Wire Wire Line
+	1250 4600 1400 4600
+Connection ~ 1400 4600
+Wire Wire Line
+	1400 4600 1400 5150
+Wire Wire Line
+	1250 3350 1250 3450
+Wire Wire Line
+	1250 3450 1400 3450
+Connection ~ 1400 3450
+Wire Wire Line
+	1400 3450 1400 4000
+Wire Wire Line
+	1250 2150 1250 2250
+Wire Wire Line
+	1250 2250 1400 2250
+Connection ~ 1400 2250
+Wire Wire Line
+	1400 2250 1400 2850
+Wire Wire Line
+	1250 1550 1250 1600
+Wire Wire Line
+	1250 1600 1400 1600
+Wire Wire Line
+	1600 1550 1800 1550
+Wire Wire Line
+	1800 1550 1800 2250
+Wire Wire Line
+	1600 5650 1800 5650
+Connection ~ 1800 5650
+Wire Wire Line
+	1800 5650 1800 6050
+Wire Wire Line
+	1600 5050 1800 5050
+Connection ~ 1800 5050
+Wire Wire Line
+	1800 5050 1800 5650
+Wire Wire Line
+	1600 4500 1800 4500
+Connection ~ 1800 4500
+Wire Wire Line
+	1800 4500 1800 5050
+Wire Wire Line
+	1600 3900 1600 3950
+Wire Wire Line
+	1600 3950 1800 3950
+Connection ~ 1800 3950
+Wire Wire Line
+	1800 3950 1800 4500
+Wire Wire Line
+	1600 2750 1600 2850
+Wire Wire Line
+	1600 2850 1800 2850
+Connection ~ 1800 2850
+Wire Wire Line
+	1800 2850 1800 3450
+Wire Wire Line
+	1250 2750 1250 2850
+Wire Wire Line
+	1250 2850 1400 2850
+Connection ~ 1400 2850
+Wire Wire Line
+	1400 2850 1400 3450
+Wire Wire Line
+	1600 2150 1600 2250
+Wire Wire Line
+	1600 2250 1800 2250
+Connection ~ 1800 2250
+Wire Wire Line
+	1800 2250 1800 2850
+Wire Wire Line
+	1950 1550 2150 1550
+Wire Wire Line
+	1950 5650 1950 5800
+Wire Wire Line
+	1950 5800 2150 5800
+Connection ~ 2150 5800
+Wire Wire Line
+	2150 5800 2150 6050
+Wire Wire Line
+	1950 5050 1950 5150
+Wire Wire Line
+	1950 5150 2150 5150
+Connection ~ 2150 5150
+Wire Wire Line
+	2150 5150 2150 5800
+Wire Wire Line
+	1950 4500 1950 4600
+Wire Wire Line
+	1950 4600 2150 4600
+Connection ~ 2150 4600
+Wire Wire Line
+	2150 4600 2150 5150
+Wire Wire Line
+	1950 3900 1950 4000
+Wire Wire Line
+	1950 4000 2150 4000
+Connection ~ 2150 4000
+Wire Wire Line
+	2150 4000 2150 4600
+Wire Wire Line
+	1250 3900 1250 4000
+Wire Wire Line
+	1250 4000 1400 4000
+Connection ~ 1400 4000
+Wire Wire Line
+	1400 4000 1400 4600
+Wire Wire Line
+	1600 3350 1600 3450
+Wire Wire Line
+	1600 3450 1800 3450
+Connection ~ 1800 3450
+Wire Wire Line
+	1800 3450 1800 3950
+Wire Wire Line
+	1950 3350 1950 3450
+Wire Wire Line
+	1950 3450 2150 3450
+Connection ~ 2150 3450
+Wire Wire Line
+	2150 3450 2150 4000
+Wire Wire Line
+	1950 2750 1950 2850
+Wire Wire Line
+	1950 2850 2150 2850
+Connection ~ 2150 2850
+Wire Wire Line
+	2150 2850 2150 3450
+Wire Wire Line
+	1950 2150 1950 2250
+Wire Wire Line
+	1950 2250 2150 2250
+Wire Wire Line
+	2150 1550 2150 2250
+Connection ~ 2150 2250
+Wire Wire Line
+	2150 2250 2150 2850
+Wire Wire Line
+	2300 1550 2500 1550
+Wire Wire Line
+	2500 1550 2500 2250
+Wire Wire Line
+	2300 5650 2300 5800
+Wire Wire Line
+	2300 5800 2500 5800
+Connection ~ 2500 5800
+Wire Wire Line
+	2500 5800 2500 6050
+Wire Wire Line
+	2300 5050 2300 5150
+Wire Wire Line
+	2300 5150 2500 5150
+Connection ~ 2500 5150
+Wire Wire Line
+	2500 5150 2500 5800
+Wire Wire Line
+	2300 4500 2300 4650
+Wire Wire Line
+	2300 4650 2500 4650
+Connection ~ 2500 4650
+Wire Wire Line
+	2500 4650 2500 5150
+Wire Wire Line
+	2300 3900 2300 4000
+Wire Wire Line
+	2300 4000 2500 4000
+Connection ~ 2500 4000
+Wire Wire Line
+	2500 4000 2500 4650
+Wire Wire Line
+	2300 3350 2300 3450
+Wire Wire Line
+	2300 3450 2500 3450
+Connection ~ 2500 3450
+Wire Wire Line
+	2500 3450 2500 4000
+Wire Wire Line
+	2300 2750 2300 2900
+Wire Wire Line
+	2300 2900 2500 2900
+Connection ~ 2500 2900
+Wire Wire Line
+	2500 2900 2500 3450
+Wire Wire Line
+	2300 2150 2300 2250
+Wire Wire Line
+	2300 2250 2500 2250
+Connection ~ 2500 2250
+Wire Wire Line
+	2500 2250 2500 2900
+Wire Wire Line
+	2650 1550 2850 1550
+Wire Wire Line
+	2850 1550 2850 2250
+Wire Wire Line
+	2650 5650 2650 5800
+Wire Wire Line
+	2650 5800 2850 5800
+Connection ~ 2850 5800
+Wire Wire Line
+	2850 5800 2850 6050
+Wire Wire Line
+	2650 5200 2850 5200
+Wire Wire Line
+	2650 5050 2650 5200
+Connection ~ 2850 5200
+Wire Wire Line
+	2850 5200 2850 5800
+Wire Wire Line
+	2650 4500 2650 4600
+Wire Wire Line
+	2650 4600 2850 4600
+Connection ~ 2850 4600
+Wire Wire Line
+	2850 4600 2850 5200
+Wire Wire Line
+	2650 3900 2650 4000
+Wire Wire Line
+	2650 4000 2850 4000
+Connection ~ 2850 4000
+Wire Wire Line
+	2850 4000 2850 4600
+Wire Wire Line
+	2650 3350 2650 3450
+Wire Wire Line
+	2650 3450 2850 3450
+Connection ~ 2850 3450
+Wire Wire Line
+	2850 3450 2850 4000
+Wire Wire Line
+	2650 2750 2650 2900
+Wire Wire Line
+	2650 2900 2850 2900
+Connection ~ 2850 2900
+Wire Wire Line
+	2850 2900 2850 3450
+Wire Wire Line
+	2650 2150 2650 2250
+Wire Wire Line
+	2650 2250 2850 2250
+Connection ~ 2850 2250
+Wire Wire Line
+	2850 2250 2850 2900
+Wire Wire Line
+	3000 1550 3200 1550
+Wire Wire Line
+	3200 1550 3200 2250
+Wire Wire Line
+	3000 5650 3000 5800
+Wire Wire Line
+	3000 5800 3200 5800
+Connection ~ 3200 5800
+Wire Wire Line
+	3200 5800 3200 6050
+Wire Wire Line
+	3000 5050 3000 5200
+Wire Wire Line
+	3000 5200 3200 5200
+Connection ~ 3200 5200
+Wire Wire Line
+	3200 5200 3200 5800
+Wire Wire Line
+	3000 4500 3000 4600
+Wire Wire Line
+	3000 4600 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3200 4600 3200 5200
+Wire Wire Line
+	3000 3900 3000 4000
+Wire Wire Line
+	3000 4000 3200 4000
+Connection ~ 3200 4000
+Wire Wire Line
+	3200 4000 3200 4600
+Wire Wire Line
+	3000 3350 3000 3450
+Wire Wire Line
+	3000 3450 3200 3450
+Connection ~ 3200 3450
+Wire Wire Line
+	3200 3450 3200 4000
+Wire Wire Line
+	3000 2750 3000 2900
+Wire Wire Line
+	3000 2900 3200 2900
+Connection ~ 3200 2900
+Wire Wire Line
+	3200 2900 3200 3450
+Wire Wire Line
+	3000 2150 3000 2250
+Wire Wire Line
+	3000 2250 3200 2250
+Connection ~ 3200 2250
+Wire Wire Line
+	3200 2250 3200 2900
+Wire Wire Line
+	3350 1550 3550 1550
+Wire Wire Line
+	3550 1550 3550 2250
+Wire Wire Line
+	3350 5650 3350 5800
+Wire Wire Line
+	3350 5800 3550 5800
+Connection ~ 3550 5800
+Wire Wire Line
+	3550 5800 3550 6050
+Wire Wire Line
+	3350 5050 3350 5200
+Wire Wire Line
+	3350 5200 3550 5200
+Connection ~ 3550 5200
+Wire Wire Line
+	3550 5200 3550 5800
+Wire Wire Line
+	3350 4500 3350 4600
+Wire Wire Line
+	3350 4600 3550 4600
+Connection ~ 3550 4600
+Wire Wire Line
+	3550 4600 3550 5200
+Wire Wire Line
+	3350 3900 3350 4000
+Wire Wire Line
+	3350 4000 3550 4000
+Connection ~ 3550 4000
+Wire Wire Line
+	3550 4000 3550 4600
+Wire Wire Line
+	3350 3350 3350 3450
+Wire Wire Line
+	3350 3450 3550 3450
+Connection ~ 3550 3450
+Wire Wire Line
+	3550 3450 3550 4000
+Wire Wire Line
+	3350 2750 3350 2900
+Wire Wire Line
+	3350 2900 3550 2900
+Connection ~ 3550 2900
+Wire Wire Line
+	3550 2900 3550 3450
+Wire Wire Line
+	3350 2150 3350 2250
+Wire Wire Line
+	3350 2250 3550 2250
+Connection ~ 3550 2250
+Wire Wire Line
+	3550 2250 3550 2900
+Wire Wire Line
+	3700 1550 4000 1550
+Wire Wire Line
+	3700 5650 3700 5800
+Wire Wire Line
+	3700 5800 4000 5800
+Connection ~ 4000 5800
+Wire Wire Line
+	4000 5800 4000 6050
+Wire Wire Line
+	3700 5050 3700 5200
+Wire Wire Line
+	3700 5200 4000 5200
+Wire Wire Line
+	4000 1550 4000 2250
+Connection ~ 4000 5200
+Wire Wire Line
+	4000 5200 4000 5800
+Wire Wire Line
+	3700 4500 3700 4650
+Wire Wire Line
+	3700 4650 4000 4650
+Connection ~ 4000 4650
+Wire Wire Line
+	4000 4650 4000 5200
+Wire Wire Line
+	3700 3900 3700 4000
+Wire Wire Line
+	3700 4000 4000 4000
+Connection ~ 4000 4000
+Wire Wire Line
+	4000 4000 4000 4650
+Wire Wire Line
+	3700 3350 3700 3450
+Wire Wire Line
+	3700 3450 4000 3450
+Connection ~ 4000 3450
+Wire Wire Line
+	4000 3450 4000 4000
+Wire Wire Line
+	3700 2750 3700 2900
+Wire Wire Line
+	3700 2900 4000 2900
+Connection ~ 4000 2900
+Wire Wire Line
+	4000 2900 4000 3450
+Wire Wire Line
+	3700 2150 3700 2250
+Wire Wire Line
+	3700 2250 4000 2250
+Connection ~ 4000 2250
+Wire Wire Line
+	4000 2250 4000 2900
+Text Label 1400 6050 0    50   ~ 0
+LED0
+Text Label 1800 6050 0    50   ~ 0
+LED1
+Text Label 2150 6050 0    50   ~ 0
+LED2
+Text Label 2500 6050 0    50   ~ 0
+LED3
+Text Label 2850 6050 0    50   ~ 0
+LED4
+Text Label 3200 6050 0    50   ~ 0
+LED5
+Text Label 3550 6050 0    50   ~ 0
+LED6
+Text Label 4000 6050 0    50   ~ 0
+LED7
+$EndSCHEMATC
